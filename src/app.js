@@ -3,7 +3,8 @@ const path = require('path');
 const express = require('express');
 const app = express();
 
-app.listen(3030, () => {
+const port = process.env.PORT || 3030;
+app.listen(port, () => {
     console.log('Server ON')
 })
 
