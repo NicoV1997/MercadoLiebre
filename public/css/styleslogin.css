@@ -106,6 +106,10 @@ ul {
     padding-bottom: 60px;
 }
 
+.boton:hover {
+    color: #0022AA;
+}
+
 /* -- main -- //////////////// */
 
 /* -- footer -- //////////////// */

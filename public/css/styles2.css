@@ -209,6 +209,7 @@ footer {
 
 .opciones {
     display: flex;
+    padding-bottom: 10px;
 }
 
 .opciones1 {
@@ -242,11 +243,17 @@ article {
     width: 45%;
 }
 
+
 .descripciones {
-        display: block;
+    display: block;
+    color: white;
 }
 
-article {
+.descripciones:hover {
+       color: black;
+}
+
+article:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 /* -- main -- //////////////// */
@@ -262,6 +269,19 @@ article {
     width: 24%;
 }
 /* -- header -- //////////////// */
+
+/* -- main -- //////////////// */
+.fa-truck {
+transition: rotar 1000ms;
+}
+
+@keyframes rotar {
+    0% {
+        transform: rotate(90deg);
+    }
+}
+
+/* -- main -- //////////////// */
 
 /* -- footer -- //////////////// */
 
