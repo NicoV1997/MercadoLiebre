@@ -1,0 +1,285 @@
+/* colores a usar en ML 
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+border: 1px solid red; */
+
+/*----------------------------------------------------------------------------- MOBILE -------------------------------------------------------------------*/
+* {
+    font-family: 'Roboto'; /* fuente de todos los textos */
+    box-sizing: border-box; /* impide que los elementos se expandan mas alla del width y height estipulados */
+    margin: 0px; /* datos que me da PG */
+    padding: 0px; /* datos que me da PG */
+    box-sizing: border-box; /* datos que me da PG */
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* -- header -- //////////////// */
+.top {
+    background-color: #EAC926;
+    width: 100%;
+}
+
+.header-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo {
+    width: 50%;
+    padding: 5%;
+}
+
+.barra-busqueda {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  /*   border: 1px solid red; */
+}
+
+
+.cuotas {
+    text-align: center;
+}
+
+ul {
+    list-style: none; /* quito los puntos que se generan automaticamente en los elementos de la lista */
+}
+
+.opciones1, .opciones2 {
+    display: none;
+}
+
+.burguer-menu {
+    display: block;                
+    text-align: center;
+    width: 3em; /* ancho del boton azul, no incluye el icono */
+    height: 3em; /* alto del boton azul, no incluye el icono */
+    background-color: #1259c3;
+    border-radius: 0.5em;
+    margin: auto; /* centra el botón */
+    margin-top: 2.5em; /* espacio con el texto de arriba */
+    margin-bottom: 1.5em; /* espacio con el borde de abajo */
+    padding: 0.75em; /* tamaño del boton en referencia al icono */
+    border: 0.1em solid white;
+    box-sizing: border-box;
+}
+
+.banner {
+    width: 100vw;
+}
+
+.banner img {
+    width: 100%; 
+    max-width: 100%; /* Para que la imagen no se estire */
+    display: block;
+}
+/* -- header -- //////////////// */
+
+/* -- main -- //////////////// */
+main {
+    width: 90%;
+    margin: auto;
+}
+
+h2 {
+    font-size: 24px;
+    padding: 30px;
+    font-weight: bold;
+}
+
+section {
+    display: flex; /* hacemos que la caja madre tenga la posibilidad de cambiar */
+    flex-wrap: wrap; /* hacemos que las cajas hijas matengan el tamanio previamente indicado */
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.imagen-producto {
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    color: #666;
+}
+
+article {
+    padding-bottom: 70px;
+}
+
+.producto {
+    border: 1px solid #ebebeb;
+    padding: 15px;
+    background-color: white;
+    position: relative; /* Por alguna razon tuve que poner esto para que el codigo de .fa-truck que me da PG me posicione el icono en la parte derecha */
+}
+
+.fa-truck {
+display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+right: 20px;
+top: -15px;
+position: absolute;
+}
+
+.descripciones {
+    display: none;
+}
+
+.organizador-oferta {
+    display: flex;
+}
+
+.precios {
+    width: 30%;
+}
+
+.descuentos {
+    color: #39b54a;
+    width: 70%;
+}
+
+/* -- main -- //////////////// */
+
+/* -- footer -- //////////////// */
+footer {
+    text-align: center;
+    background-color: white;
+}
+
+
+.fa-user-shield, .fa-gift, .fa-credit-card {
+    font-size: 2em; /* tamanio de los iconos del footer */
+    padding: 10px;
+}
+/* -- footer -- //////////////// */
+
+/*----------------------------------------------------------------------------- TABLET -------------------------------------------------------------------*/
+@media (min-width: 731px) {
+/* -- header -- //////////////// */
+
+.top-tablet {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 32%;
+    margin: auto;
+    padding: 20px;
+}
+
+
+.barra-busqueda {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+
+}
+
+.cuotas {
+    width: 32%;
+    margin: auto;
+    padding-right: 20px;
+} 
+
+.opciones {
+    display: flex;
+}
+
+.opciones1 {
+    width: 50%;
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: black;
+    justify-content: space-evenly;
+}
+
+.opciones2 {
+    width: 50%;
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: black;
+    justify-content: space-evenly;
+}
+
+.burguer-menu {
+    display: none;
+}
+/* -- header -- //////////////// */
+
+/* -- main -- //////////////// */
+
+article {
+    width: 45%;
+}
+
+.descripciones {
+        display: block;
+}
+
+article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+/* -- main -- //////////////// */
+
+
+}
+/*----------------------------------------------------------------------------- DESKTOP -------------------------------------------------------------------*/
+@media (min-width: 1200px) {
+
+
+/* -- header -- //////////////// */   
+article {
+    width: 24%;
+}
+/* -- header -- //////////////// */
+
+/* -- footer -- //////////////// */
+
+ footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+ }
+
+ .tarjeta, .envio, .seguridad {
+    width: 32%;
+ }
+ 
+ .copy {
+    width: 100%;
+    padding-top: 30px;
+ }
+
+/* -- footer -- //////////////// */
+
+}

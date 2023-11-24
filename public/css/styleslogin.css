@@ -1,0 +1,205 @@
+/* border: 1px solid red;  */
+* {
+    font-family: 'Roboto'; /* fuente de todos los textos */
+    box-sizing: border-box; /* impide que los elementos se expandan mas alla del width y height estipulados */
+    margin: 0px; /* datos que me da PG */
+    padding: 0px; /* datos que me da PG */
+    box-sizing: border-box; /* datos que me da PG */
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* -- header -- //////////////// */
+.top {
+    background-color: #EAC926;
+    width: 100%;
+}
+
+.header-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo {
+    width: 50%;
+    padding: 5%;
+}
+
+.barra-busqueda {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuotas {
+    text-align: center;
+}
+
+ul {
+    list-style: none; /* quito los puntos que se generan automaticamente en los elementos de la lista */
+}
+
+.opciones1, .opciones2 {
+    display: none;
+}
+
+.burguer-menu {
+    display: block;                
+    text-align: center;
+    width: 3em; /* ancho del boton azul, no incluye el icono */
+    height: 3em; /* alto del boton azul, no incluye el icono */
+    background-color: #1259c3;
+    border-radius: 0.5em;
+    margin: auto; /* centra el botón */
+    margin-top: 2.5em; /* espacio con el texto de arriba */
+    margin-bottom: 1.5em; /* espacio con el borde de abajo */
+    padding: 0.75em; /* tamaño del boton en referencia al icono */
+    border: 0.1em solid white;
+    box-sizing: border-box;
+}
+
+.banner {
+    width: 100vw;
+}
+
+.banner img {
+    width: 100%; 
+    max-width: 100%; /* Para que la imagen no se estire */
+    display: block;
+}
+/* -- header -- //////////////// */
+
+/* -- main -- //////////////// */
+.campos {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.user {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+
+.password {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.boton  {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 60px;
+}
+
+/* -- main -- //////////////// */
+
+/* -- footer -- //////////////// */
+footer {
+    text-align: center;
+    background-color: white;
+}
+
+
+.fa-user-shield, .fa-gift, .fa-credit-card {
+    font-size: 2em; /* tamanio de los iconos del footer */
+    padding: 10px;
+}
+/* -- footer -- //////////////// */
+
+/*----------------------------------------------------------------------------- TABLET -------------------------------------------------------------------*/
+@media (min-width: 731px) {
+    /* -- header -- //////////////// */
+    
+    .top-tablet {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        width: 32%;
+        margin: auto;
+        padding: 20px;
+    }
+    
+    
+    .barra-busqueda {
+        width: 50%;
+        margin: auto;
+        padding: 20px;
+    
+    }
+    
+    .cuotas {
+        width: 32%;
+        margin: auto;
+        padding-right: 20px;
+    } 
+    
+    .opciones {
+        display: flex;
+    }
+    
+    .opciones1 {
+        width: 50%;
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        color: black;
+    }
+    
+    .opciones2 {
+        width: 50%;
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        color: black;
+    }
+    
+    .burguer-menu {
+        display: none;
+    }
+    /* -- header -- //////////////// */
+}
+
+/*----------------------------------------------------------------------------- DESKTOP -------------------------------------------------------------------*/
+@media (min-width: 1200px) {
+    
+
+    /* -- footer -- //////////////// */
+
+ footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+ }
+
+ .tarjeta, .envio, .seguridad {
+    width: 32%;
+ }
+ 
+ .copy {
+    width: 100%;
+    padding-top: 30px;
+ }
+
+/* -- footer -- //////////////// */
+}
